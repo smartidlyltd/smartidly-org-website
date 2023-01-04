@@ -1,0 +1,394 @@
+
+
+/*
+  ===========Index==========
+	01) Import Section
+	02) Variable Section
+	03) Global CSS Section
+	04) Header Section
+	05) Hero Section
+	06) About Section
+	07) Templates Section
+	08) Features Section
+	09) Project Section
+	10) Template Section
+	11) Contact Section
+	12) Footer Section
+  ===========================
+*/
+/*==========01) Import Section Start==========*/
+
+
+/*==========01) Import Section End==========*/
+
+/*==========02) Variable Section Start==========*/
+:root{
+	/*=======Color=======*/
+	--bg-color:#8198b8;;
+	--white-color:#ffffff;
+	--span-color:#113363;
+	--primary-color:#ff3334;
+	--border:#163665;
+	--dark:#000000;
+	--gray:#4f6078;
+
+}
+/*==========02) Variable Section End==========*/
+
+/*==========03) Global Section Start==========*/
+body{
+ background-color:var(--bg-color);
+}
+section{
+	padding: 90px 0;
+}
+center{
+	justify-content: center;
+	justify-items: center;
+}
+h1{
+	font-size: 45px;
+	font-family: 'Open Sans', sans-serif;
+}
+h2{
+	font-size: 40px;
+	font-family: 'Open Sans', sans-serif;
+}
+h4{
+	font-family: 'Open Sans', sans-serif;
+	color: var(--white-color);
+	line-height: normal;
+	font-size: 18px;
+}
+span{
+	color: var(--span-color);
+}
+p{
+	font-size: 14px;
+	line-height: 2;
+	color: var(--span-color);
+}
+.btn{
+	border: 2px solid var(--border);
+	color: var(--white) !important;
+	padding: 15px 30px;
+	border-radius: 30px;
+	margin-top: 30px;
+	font-family: 'Open Sans', sans-serif;
+}
+.btn:hover{
+	background: var(--primary-color);
+	outline: none;
+	box-shadow: none;
+	color: var(--white);
+}
+svg{
+	color: var(--primary-color);
+	font-size: 35px !important;
+}
+.nav_fixed{
+	position: fixed;
+	width: 100%;
+	top: -1px;
+	left: 0;
+	right: 0;
+	background:var(--primary-color);
+	box-shadow: var(--box-shadow);
+	opacity: 0.7;
+	z-index: 999;
+	transition: nav 1s ease;
+	padding: 0 1rem;
+}
+.sec{
+	color: var(--dark) !important;
+}
+.sec:hover{
+	color: var(--white-color) !important;
+}
+/*==========03) Global Section End==========*/
+
+/*==========04) Header Section Start==========*/
+#header .nav{
+	background-color: var(--bg-color) !important;
+}
+#header .navbar-brand img{
+	filter: brightness(0) invert(1);
+	width: 100%;
+}
+#header .navbar-dark .navbar-toggler{
+	border: none;
+	outline: none;
+}
+#header .navbar-toggler span{
+	font-size: 25px;
+}
+#header .nav-item a{
+	font-family:'Open Sans', sans-serif;
+	text-transform: uppercase;
+	color:var(--white-color);
+}
+/*==========04) Header Section End==========*/
+
+/*==========05) Hero Section Start==========*/
+
+/*==========05) Hero Section End==========*/
+
+/*==========06) About Section Start==========*/
+#about{
+	padding-top: 20px;
+	background: url(../img/hero-bg.png)center no-repeat;
+}
+/*==========06) About Section End==========*/
+
+/*==========07) Template Section Start==========*/
+#template{
+	background: url(../img/headphone.png)no-repeat;
+	background-size: 45% 100%;
+	min-height: 430px;
+	width: 100%;
+	overflow: hidden;
+}
+/*==========07) Template Section End==========*/
+
+/*==========08) Features Section Start==========*/
+
+#features .features-body{
+	padding-top: 0px;
+}
+#features .features-body h4{
+	margin: 0;
+}
+/*==========08) Features Section End==========*/
+
+/*==========09) Project Section Start==========*/
+#design{
+	background:url('../img/designpic.svg') no-repeat right;
+	background-size: 50% 50%;
+	width:100%;
+	
+}
+#apps{
+	background:url('../img/iosandroid.svg') no-repeat right;
+	background-size: 50% 50%;
+	width:100%;
+	
+}
+#web{
+	background:url('../img/webpic.svg') no-repeat right;
+	background-size: 50% 50%;
+	width:100%;
+	
+}
+/*==========09) Peoject Section End==========*/
+
+/*==========10) Testimonial Section Start==========*/
+#testimonial{
+	background: url(../img/client-bg.png) center no-repeat;
+	padding-top: 100px;
+	position: relative;
+}
+.testimonial-content{
+		width: 65%;
+		margin: 0 auto;
+		color: #66778e;
+		padding-bottom: 80px;
+}
+.testimonial-content h5 {
+	line-height: 2;
+	width: 80%;
+	margin: 0 auto;
+	color: var(--white);
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+	font-size: 17px;
+}
+.client-info{
+	display: flex;
+	justify-content: center;
+	padding-top: 60px;
+	align-items: center;
+}
+.client-info img{
+	width: 5%;
+	height: 5%;
+}
+.client-info h6{
+	margin: 0;
+	color: var(--gray);
+	align-self: center;
+	padding: 0 10px;
+}
+.carousel-indicators li{
+	height: 12px;
+	width: 12px;
+	background: transparent;
+	border: 2px solid #203960;
+	border-radius: 50px;
+}
+.carousel-indicators .active{
+	background: #335a95;
+	border: 2px solid #335a95;
+}
+/*==========10) Testimonial Section End==========*/
+
+/*==========11) Contact Section Start==========*/
+#features .features-body p,
+#project p,
+#contact .contact-text{
+	color: var(--gray);
+}
+
+/*==========11) Contact Section End==========*/
+#contact, .footer{
+	background:var(--dark);
+}
+#contact .contact-heading{
+		width: 60%;
+		text-align: center;
+		margin: 0 auto;
+		padding-bottom: 45px;
+}
+/*==========12) Footer Section Start==========*/
+.footer .container{
+		border-top: 1px solid var(--gray);
+		border-color: var(--span-color);
+		padding-top: 10px;
+}
+.footer ul{
+	padding-left: 0;
+}
+.footer ul li{
+	list-style-type: none;
+	margin: 0 5px;
+}
+.footer ul li:hover a{
+	text-decoration: none;
+	color: var(--primary-color);
+}
+.footer ul li a{
+	color: var(--span-color);
+}
+.footer .copyright p{
+	color: var(--span-color);
+}
+/*==========12) Footer Section End==========*/
+
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap");
+* {
+  margin: 0;
+  justify-content: center;
+
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+
+body .containerr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 2px 0;
+}
+
+body .containerr .card {
+  position: relative;
+  min-width: 320px;
+  height: 440px;
+  box-shadow: inset 5px 5px 5px #113363d5,
+    inset -5px -5px 15px rgba(173, 9, 9, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(226, 12, 12, 0.1);
+  border-radius: 15px;
+  margin: 30px;
+  transition: 0.5s;
+}
+
+body .containerr .card:nth-child(1) .box .content a {
+  background: #2196f3;
+}
+
+body .containerr .card:nth-child(2) .box .content a {
+  background: #e91e63;
+}
+
+body .containerr .card:nth-child(3) .box .content a {
+  background: #23c186;
+}
+
+body .containerr .card .box {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  background: #162668;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+body .containerr .card .box:hover {
+  transform: translateY(-50px);
+}
+
+body .containerr .card .box:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+body .containerr .card .box .content {
+  padding: 20px;
+  text-align: center;
+}
+
+body .containerr .card .box .content h2 {
+  position: absolute;
+  top: -10px;
+  right: 30px;
+  font-size: 8rem;
+  color: rgba(255, 255, 255, 0.1);
+}
+
+body .containerr .card .box .content h3 {
+  font-size: 1.8rem;
+  color: #fff;
+  z-index: 1;
+  transition: 0.5s;
+  margin-bottom: 15px;
+}
+
+body .containerr .card .box .content p {
+  font-size: 1rem;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.9);
+  z-index: 1;
+  transition: 0.5s;
+}
+
+body .containerr .card .box .content a {
+  position: relative;
+  padding: 8px 20px;
+  background: black;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  margin-top: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+}
+body .containerr .card .box .content a:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+  background: #fff;
+  color: #000;
+}
