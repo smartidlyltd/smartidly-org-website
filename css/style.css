@@ -24,18 +24,29 @@
 /*==========02) Variable Section Start==========*/
 :root{
 	/*=======Color=======*/
-	--bg-color:#8198b8;;
+	--bg-color:#fcfcfc;;
 	--white-color:#ffffff;
 	--span-color:#113363;
-	--primary-color:#ff3334;
+	--primary-color:#113363;
 	--border:#163665;
 	--dark:#000000;
+	--light:#ffffff;
 	--gray:#4f6078;
 
 }
+
+
 /*==========02) Variable Section End==========*/
 
 /*==========03) Global Section Start==========*/
+
+textblue{
+	color: #113363;
+}
+textlightblue{
+	color: #5981b8;
+}
+
 body{
  background-color:var(--bg-color);
 }
@@ -56,7 +67,7 @@ h2{
 }
 h4{
 	font-family: 'Open Sans', sans-serif;
-	color: var(--white-color);
+	color: var(--span-color);
 	line-height: normal;
 	font-size: 18px;
 }
@@ -70,7 +81,7 @@ p{
 }
 .btn{
 	border: 2px solid var(--border);
-	color: var(--white) !important;
+	color: var(--span-color) !important;
 	padding: 15px 30px;
 	border-radius: 30px;
 	margin-top: 30px;
@@ -80,7 +91,7 @@ p{
 	background: var(--primary-color);
 	outline: none;
 	box-shadow: none;
-	color: var(--white);
+	color: var(--span-color);
 }
 svg{
 	color: var(--primary-color);
@@ -92,7 +103,8 @@ svg{
 	top: -1px;
 	left: 0;
 	right: 0;
-	background:var(--primary-color);
+	background:var(--span-color);
+	color: var(--span-color);
 	box-shadow: var(--box-shadow);
 	opacity: 0.7;
 	z-index: 999;
@@ -100,16 +112,16 @@ svg{
 	padding: 0 1rem;
 }
 .sec{
-	color: var(--dark) !important;
+	color: var(--light) !important;
 }
 .sec:hover{
-	color: var(--white-color) !important;
+	color: var(--span-color) !important;
 }
 /*==========03) Global Section End==========*/
 
 /*==========04) Header Section Start==========*/
 #header .nav{
-	background-color: var(--bg-color) !important;
+	background-color: var(--span-color) !important;
 }
 #header .navbar-brand img{
 	filter: brightness(0) invert(1);
@@ -125,7 +137,7 @@ svg{
 #header .nav-item a{
 	font-family:'Open Sans', sans-serif;
 	text-transform: uppercase;
-	color:var(--white-color);
+	color:var(--span-color);
 }
 /*==========04) Header Section End==========*/
 
